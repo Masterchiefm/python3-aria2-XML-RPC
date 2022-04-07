@@ -20,7 +20,7 @@ clone this code. and copy Aria2Py.py into your client project directory.
 git clone https://github.com/Masterchiefm/Aria2Py.git 
 ```
 ## quick start
-!(quick start)[https://raw.githubusercontent.com/Masterchiefm/Aria2Py/main/screenshot.png]
+![quick start](https://raw.githubusercontent.com/Masterchiefm/Aria2Py/main/screenshot.png)
 
 ## initiate a client
 In your client directory, import Aria2Py as follow to initiate a client:
