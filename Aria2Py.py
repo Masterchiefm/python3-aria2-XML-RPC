@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 import os
-import xmlrpc
+import xmlrpc.client as xmlrpc_client
 class Aria2Client:
     """Default server address is http://127.0.0.1,
     default port is 6800, default token is empty"""
@@ -12,7 +12,7 @@ class Aria2Client:
         self.server_port = "6800"
         rpc = "rpc"
         self.server_url = self.server_add + ":" + self.server_port + "/" + rpc
-        self.server = xmlrpc.client.ServerProxy(self.server_url)
+        self.server = xmlrpc_client.ServerProxy(self.server_url)
         self.token = ''
 
     
@@ -45,7 +45,7 @@ class Aria2Client:
        
     
         self.server_url = self.server_add + ":" + self.server_port + "/" + rpc
-        self.server = xmlrpc.client.ServerProxy(self.server_url)
+        self.server = xmlrpc_client.ServerProxy(self.server_url)
     
     
     def get_version(self):
@@ -96,7 +96,7 @@ class Aria2Client:
         '''upload torrent file to download. 
         <<WARING>>
         This function is not tested!!!'''
-        torrent = xmlrpc.client.Binary(open(torrent_position, mode='rb').read())
+        torrent = xmlrpc_client.Binary(open(torrent_position, mode='rb').read())
         if position != "":
             download_dir = dict(dir=position)
             try:
@@ -242,7 +242,7 @@ class Aria2Client:
         The elements will be either a one-item array containing the return value of the method call or a struct
         of fault element if an encapsulated method call fails."""
         try:
-            mc = xmlrpc.client.MultiCall(self.server)
+            mc = xmlrpc_client.MultiCall(self.server)
             return mc
         except Exception as e:
             return e
