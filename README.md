@@ -6,7 +6,9 @@ Aria2 RPC client in python3.  [aria2,"The next generation download utility."](ht
 aria2py是基于Python3 写的 Aria2 RPC 客户端. aria2py通过aria2 server 的 xml-RPC接口和功能控制aria2
 [中文介绍文档](https://github.com/Masterchiefm/Aria2Py/blob/main/README_zh.md)
 # Description
-aria2py controls aria2 via its xml-RPC interface and features
+aria2py controls aria2 via its xml-RPC interface and features.
+
+for more info, please refer to [Aria2 official document](https://aria2.github.io/manual/en/html/aria2c.html#methods)
 
 # Getting started
 ## Server(Optional)
