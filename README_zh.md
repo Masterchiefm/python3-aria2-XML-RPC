@@ -1,8 +1,10 @@
-# Aria2Py
+# python3-aria2-XML-RPC
 Python3 中的 Aria2 RPC 客户端。[aria2，一款强大的开源下载实用程序。](https://aria2.github.io/)。你可以用该代码开发python3连接aria2的小程序。
 
 # 描述
 aria2py通过aria2 server 的 xml-RPC接口和功能控制aria2
+
+更多内容请查阅[Aria2 official document](https://aria2.github.io/manual/en/html/aria2c.html#methods)
 
 # 开始
 ## 启动服务段（可选）
