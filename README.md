@@ -16,7 +16,7 @@ Start aria2 with rpc in your servcer, example:
 ```
 aria2c --enable-rpc --rpc-listen-all=true --rpc-allow-origin-all
 ```
-If you know an existing server, this step can be skip.
+If you have an existing server, this step can be skip.
 
 ## Creat your own client
 clone this code. and copy Aria2Py.py into your client project directory.
