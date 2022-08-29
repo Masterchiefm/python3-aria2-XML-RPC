@@ -21,7 +21,7 @@ If you have an existing server, this step can be skip.
 ## Creat your own client
 clone this code. and copy Aria2Py.py into your client project directory.
 ```
-git clone https://github.com/Masterchiefm/Aria2Py.git 
+https://github.com/Masterchiefm/python3-aria2-XML-RPC.git
 ```
 ## quick start
 ![quick start](https://raw.githubusercontent.com/Masterchiefm/Aria2Py/main/screenshot.png)
