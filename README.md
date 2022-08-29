@@ -42,7 +42,7 @@ The server info will set as  **server_add="http://127.0.0.1",server_port=6800,to
 If you want to change them, use the following to set new info. the client will use these info to connect the remote aria2 rpc server.
 
 ```
-client.set_server(server_add="http://127.0.0.1",server_port=6800,token=1234)
+client.setServer(server_add="http://127.0.0.1",server_port=6800,token=1234)
 ```
 
 If you leave the parameters blank, the client will not change the parameter's value.
@@ -50,30 +50,30 @@ If you leave the parameters blank, the client will not change the parameter's va
 For example, you can run the following:
 ```
 #set the server info:
-client.set_server(server_add="http://127.0.0.1",server_port=6800,token=1234)
+client.setServer(server_add="http://127.0.0.1",server_port=6800,token=1234)
 
 #change token only, others will not be change.
-client.set_server(server_add="http://127.0.0.1",token='fuckme')
+client.setServer(server_add="http://127.0.0.1",token='fuckme')
 ```
 
 ## Check connection
 After setting server, you can simply use one function to check connection
 ```
-client.check_connection()
+client.checkConnection()
 ```
 it will return 'Authorized' or 'Unauthorized'
 
 ## add url
 After setting server, you can simply use one function to add url as follow:
 ```
-client.add_uri("https://example.com/a1.zip")
+client.addUri("https://example.com/a1.zip")
 ```
 or 
 ```
 download_list = ["https://example.com/a1",
                   https://example.com/a2"]
         
-client.add_uri(download_list)
+client.addUri(download_list)
 ```
 
 then the function will return the task gid.
@@ -93,12 +93,12 @@ Help on module Aria2Py:
      |  __init__(self)
      |      Initialize self.  See help(type(self)) for accurate signature.
      |  
-     |  add_Torrent(self, torrent_position, position='')
+     |  addTorrent(self, torrent_position, position='')
      |      upload torrent file to download. 
      |      <<WARING>>
      |      This function is not tested!!!
      |  
-     |  add_uri(self, uri, position='')
+     |  addTri(self, uri, position='')
      |      provide the download link (or link list) to donload. Option: provide download position
      |  
      |  change_global_option(self, gid, options)
